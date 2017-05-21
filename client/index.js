@@ -1,10 +1,11 @@
 import React from 'react'
 import {render} from 'react-dom'
 
-class App extends React.Component {
-  render () {
-    return <p> Hello React!</p>
-  }
-}
+import CV from './components/CV'
 
-render(<App/>, document.getElementById('app'))
+if (typeof window !== 'undefined') {
+  render(
+    <CV id='cv' />,
+		document.getElementById('root')
+	)
+}
