@@ -5,13 +5,13 @@ export default class Education extends Component {
     constructor (props) {
         super(props)
 
-        /*this.state = {
-            course: this.props.education.course,
-            startDate: this.props.education.startDate,
-            endDate: this.props.education.endDate,
-            school: this.props.education.school,
-            info: this.props.education.info
-        }*/
+        this.state = {
+            course: props.education.course,
+            startDate: props.education.startDate,
+            endDate: props.education.endDate,
+            school: props.education.school,
+            info: props.education.info
+        }
         
     }
 
@@ -19,16 +19,16 @@ export default class Education extends Component {
         return (
             <div className="item">
                 <h3>
-                    <span className="course l">{this.props.education.course}</span>
-                    <span className="date r">{this.props.education.startDate} &mdash; {this.props.education.endDate}</span>
+                    <span className="course l">{this.state.course}</span>
+                    <span className="date r">{this.state.startDate} &mdash; {this.state.endDate}</span>
                 </h3>
 
                 <div className="clear"> </div>
-                <span className="school">{this.props.education.school}</span>
+                <span className="school">{this.state.school}</span>
 
                 <div className="info">
 
-                    {this.props.education.info.map((line) => {return line.length < 1 ? line = <div><br/></div> : line = <div>{line}</div>})}
+                    {this.state.info.map((line) => {return line.length < 1 ? line = <div><br/></div> : line = <div>{line}</div>})}
 
                 </div>
                 <div className="clear"> </div>

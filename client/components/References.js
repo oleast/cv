@@ -5,20 +5,20 @@ export default class References extends Component {
     constructor (props) {
         super(props)
 
-        /*this.state = {
-            title: this.props.references.title,
-            values: this.props.references.values
-        }*/
+        this.state = {
+            title: props.references.title,
+            values: props.references.values
+        }
     }
 
     render() {
         return (
             <div className="section section-references">
-                <h2 className="title">{this.props.references.title}</h2>
+                <h2 className="title">{this.state.title}</h2>
                 <div className="set">
                     <div className="item">
                         <span className="info">
-                            {this.props.references.values.map((reference) => <div>{reference.name}: {reference.value}</div>)}
+                            {this.state.values.map((reference) => <div>{reference.name}: {reference.value}</div>)}
                         </span>
                     </div>
                 </div>

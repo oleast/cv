@@ -5,20 +5,20 @@ export default class Skeleton extends Component {
     constructor (props) {
         super(props)
 
-        /*this.state = {
-            class: this.props.data.class,
-            label: this.props.data.label,
-            value: this.props.data.value
-        }*/
+        this.state = {
+            class: props.data.class,
+            label: props.data.label,
+            value: props.data.value
+        }
     }
 
     render() {
         return (
-            <p className={ this.props.data.class }>
-                <label>{ this.props.data.label }
+            <p className={ this.state.class }>
+                <label>{ this.state.label }
                     <span className="colon">:</span>
                 </label> 
-                <span className="value">{ this.props.data.value }</span>
+                <span className="value">{ this.state.value }</span>
             </p>
         )
     }

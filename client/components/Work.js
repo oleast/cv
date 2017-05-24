@@ -5,14 +5,13 @@ export default class Work extends Component {
     constructor (props) {
         super(props)
 
-        /*this.state = {
-            company: this.props.work.company,
-            startDate: this.props.work.startDate,
-            endDate: this.props.work.endDate,
-            title: this.props.work.title,
-            info: this.props.work.info
-        }*/
-        
+        this.state = {
+            company: props.work.company,
+            startDate: props.work.startDate,
+            endDate: props.work.endDate,
+            title: props.work.title,
+            info: props.work.info
+        }
     }
 
     render() {

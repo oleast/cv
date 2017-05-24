@@ -6,13 +6,11 @@ export default class HeaderPhoto extends Component {
 	constructor (props) {
         super(props)
 
-		console.log(props)
-		console.log(props.contact)
         this.state = {
-			firstName: this.props.firstName,
-			lastName: this.props.lastName,
-			address: this.props.address,
-			contact: this.props.contact
+			firstName: props.firstName,
+			lastName: props.lastName,
+			address: props.address,
+			contact: props.contact
         }
     }
 

@@ -14,6 +14,8 @@ const session = require('express-session')
 const logger = require('winston')
 const path = require('path')
 
+const routes = require('./routes')
+
 // ///////////////////////////////////////////////////
 // Constants
 // ///////////////////////////////////////////////////
@@ -37,6 +39,8 @@ app.use(express.static('public'))
 
 // Adjust the log level via environment variable
 logger.level = LOG_LEVEL
+
+app.use('/', routes)
 
 app.listen(PORT, () => logger.info('CV server running on port ' + PORT))
 
