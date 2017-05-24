@@ -1,10 +1,19 @@
 import React, { Component } from 'react'
 
 export default class Photo extends Component {
+
+    constructor (props) {
+        super(props)
+
+        /*this.state = {
+            photo: this.props.photo
+        }*/
+    }
+
     render() {
         return (
             <div id="photo">
-                <img src="http://files1.cvmkr.com/2fdd53_1956599_4658380.jpg" alt="" />
+                <img src={this.props.photo} alt="" />
             </div>
         )
     }

@@ -59,4 +59,5 @@ typings/
 
 *bundle.js
 dist/
+public/index.html
 
