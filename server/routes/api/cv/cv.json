@@ -33,23 +33,23 @@
                     "",
                     "I Drift- og Utviklingskomiteen har jeg en rekke arbeidsoppgaver:",
                     " - Drift og vedlikehold av maskinvare. Inkluderer egne rackservere, inkludert hypervisors og lagringsservere.",
-                    " - Vedlikehold, utvikling og automatisering av softwareløsninger på våre egne servere og servere i skyen.",
-                    " - Utvikling av nye og gamle programvareløsninger for lineforeningen, inkludert linjeforeningens nettsted: online.ntnu.no.",
-                    "    Dette innebærer også å lære om og å ta nytte av de nyeste løsningene innenfor software.",
-                    " - Opplæring og dokumentasjon for å hjelpe nye medlemmer til å kunne videre overta arbeidsoppgavene mine."
+                    "  - Vedlikehold, utvikling og automatisering av softwareløsninger på våre egne servere og servere i skyen.",
+                    "  - Utvikling av nye og gamle programvareløsninger for lineforeningen, inkludert linjeforeningens nettsted: online.ntnu.no.",
+                    "     Dette innebærer også å lære om og å ta nytte av de nyeste løsningene innenfor software.",
+                    "  - Opplæring og dokumentasjon for å hjelpe nye medlemmer til å kunne videre overta arbeidsoppgavene mine."
                 ]
             }
         ]
     },
     "education": { 
-        "title": "Arbeidserfaring",
+        "title": "Utdanning",
         "values": [
             {
                 "course": "Ungdomsskole",
                 "startDate": "August 2009",
                 "endDate": "Juni 2012",
                 "school": "Gjerdrum Ungdomsskole",
-                "info": [""]
+                "info": []
             }, {
                 "course": "Studiespesialiserende",
                 "startDate": "August 2012",
