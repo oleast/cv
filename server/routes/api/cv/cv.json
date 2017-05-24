@@ -5,8 +5,8 @@
     "photo": "http://files1.cvmkr.com/2fdd53_1956599_4658380.jpg",
     "contact": [
         {"class": "email", "label": "Epost", "value": "olestokker@outlook.com"},
-        {"class": "website", "label": "Nettside", "value": "https://stokkers.no"},
-        {"class": "phone", "label": "Telefonnummer", "value": "47 68 44 66"}
+        {"class": "website", "label": "Nettside", "value": "stokkers.no"},
+        {"class": "phone", "label": "Telefonnummer", "value": "47684466"}
     ],
     "work": { 
         "title": "Arbeidserfaring",
@@ -30,6 +30,7 @@
                 "title": "Drifter og Utvikler",
                 "info": [
                     "Som drifter og utvikler i Drift- og Utviklingskomiteen i Online har jeg hatt en arena å ta mange av de teoretiske prinsippene jeg lærer på Informatikkstudiet ved NTNU inn i praktisk bruk.",
+                    "",
                     "I Drift- og Utviklingskomiteen har jeg en rekke arbeidsoppgaver:",
                     " - Drift og vedlikehold av maskinvare. Inkluderer egne rackservere, inkludert hypervisors og lagringsservere.",
                     " - Vedlikehold, utvikling og automatisering av softwareløsninger på våre egne servere og servere i skyen.",
