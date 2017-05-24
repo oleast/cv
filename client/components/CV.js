@@ -14,15 +14,9 @@ export default class CV extends Component {
 	constructor (props) {
         super(props)
 
-        /*this.state = {
-			firstName: '', lastName: '', address: '', photo: '',
-			contact: [{class: '', label: '', value: ''}],
-			work: { title: '', values: [{ company: '', startDate: '', endDate: '', title: '', info: ['']}]
-			}, education: { title: '', values: [{ course: '', startDate: '', endDate: '', school: '', info: ['']}]},
-			references: { title: '', values: [{ name: '', value: ''}]},
-			credit: { text: '', value: '' }
-		}*/
-		this.state = {render: false}
+		this.state = {
+			render: false
+		}
 
 		this.getCvData = this.getCvData.bind(this)
 	}
@@ -34,7 +28,7 @@ export default class CV extends Component {
 
 	getCvData () {
 		axios
-			.get("/api/cv")
+			.get("./api/cv")
 			.then(request => {
 				request.data.data.render = true
 				this.setState(request.data.data, () => {
