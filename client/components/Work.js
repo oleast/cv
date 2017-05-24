@@ -18,16 +18,16 @@ export default class Work extends Component {
         return (
             <div className="item">
                 <h3>
-                    <span className="company l">{this.props.work.company}</span>
-                    <span className="date r">{this.props.work.startDate} &mdash; {this.props.work.endDate}</span>
+                    <span className="company l">{this.state.company}</span>
+                    <span className="date r">{this.state.startDate} &mdash; {this.state.endDate}</span>
                 </h3>
 
                 <div className="clear"> </div>
-                <span className="job_title">{this.props.work.title}</span>
+                <span className="job_title">{this.state.title}</span>
 
                 <div className="info">
 
-                    {this.props.work.info.map((line) => {return line.length < 1 ? line = <div><br/></div> : line = <div>{line}</div>})}
+                    {this.state.info.map((line) => {return line.length < 1 ? line = <div><br/></div> : line = <div>{line}</div>})}
 
                 </div>
                 <div className="clear"> </div>
