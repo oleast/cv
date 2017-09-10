@@ -18,7 +18,7 @@ export default class WorkWrapper extends Component {
 				<h2 className="title">{this.state.title}</h2>
 				<div className="set">
 
-					{this.state.values.map((value) => { return <Work work={value} />})}
+					{this.state.values.map((value) => { return <Work key={value.name} work={value} />})}
 
 				</div>
 				<div className="clear"> </div>

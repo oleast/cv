@@ -28,7 +28,7 @@ export default class Education extends Component {
 
                 <div className="info">
 
-                    {this.state.info.map((line) => {return line.length < 1 ? line = <div><br/></div> : line = <div>{line}</div>})}
+                    {this.state.info.map((line) => {return line.length < 1 ? line = <div key={"empty-edu"}><br/></div> : line = <div key={line.name} >{line}</div>})}
 
                 </div>
                 <div className="clear"> </div>

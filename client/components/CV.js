@@ -7,6 +7,7 @@ import Photo from './Photo'
 import HeaderPhoto from './HeaderPhoto'
 import WorkWrapper from './WorkWrapper'
 import EducationWrapper from './EducationWrapper'
+import SkillsWrapper from './SkillsWrapper'
 import References from './References'
 
 export default class CV extends Component {
@@ -60,6 +61,11 @@ export default class CV extends Component {
 						<WorkWrapper work={this.state.work} />
 
 						<EducationWrapper education={this.state.education} />
+
+						{console.log(this.state.skills)}
+
+						<SkillsWrapper skills={this.state.skills} />
+
 
 						<References references={this.state.references} />
 

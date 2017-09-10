@@ -18,7 +18,7 @@ export default class EducationWrapper extends Component {
 				<h2 className="title">{this.state.title}</h2>
 				<div className="set">
 
-					{this.state.values.map((value) => { return <Education education={value} />})}
+					{this.state.values.map((value) => { return <Education key={value.name} education={value} />})}
 
 				</div>
 				<div className="clear"> </div>

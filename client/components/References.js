@@ -18,7 +18,7 @@ export default class References extends Component {
                 <div className="set">
                     <div className="item">
                         <span className="info">
-                            {this.state.values.map((reference) => <div>{reference.name}: {reference.value}</div>)}
+                            {this.state.values.map((reference) => <div key={reference.name}>{reference.name}: {reference.value}</div>)}
                         </span>
                     </div>
                 </div>
