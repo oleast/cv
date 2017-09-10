@@ -2,7 +2,7 @@
     "firstName": "Ole Anders",
     "lastName": "Stokker",
     "address": "Odd Brochmanns Veg 57",
-    "photo": "/cv.jpg",
+    "photo": "cv.jpg",
     "contact": [
         {"class": "email", "label": "Epost", "value": "olestokker@outlook.com"},
         {"class": "website", "label": "Nettside", "value": "stokkers.no"},
