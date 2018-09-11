@@ -4,35 +4,53 @@
     "address": "Odd Brochmanns Veg 57",
     "photo": "cv.jpg",
     "contact": [
-        {"class": "email", "label": "Epost", "value": "olestokker@outlook.com"},
+        {"class": "email", "label": "Epost", "value": "oleast@stud.ntnu.no"},
         {"class": "website", "label": "Nettside", "value": "stokkers.no"},
-        {"class": "phone", "label": "Telefonnummer", "value": "47684466"}
+        {"class": "phone", "label": "Telefonnummer", "value": "47684466"},
+        {"class": "website", "label": "Linkedin", "value": "linkedin.com/in/oleast"},
+        {"class": "website", "label": "Github", "value": "github.com/oleast"}
     ],
     "work": { 
         "title": "Arbeidserfaring",
         "values": [
             {
-                "company": "Firma: Ole Henry Stokker",
-                "startDate": "Juni 2015",
-                "endDate": "August 2015",
-                "title": "Sommerjobb - Diverse",
-                "info": [
-                    "Sommerjobb som hovedsaklig gikk ut på å lage rør til borerigger.",
-                    "",
-                    "Arbeidsoppgaver:",
-                    " - Kutte stålrør.",
-                    " - Lage gjenger i stålrør meg gjengemaskin."
-                ]
-            }, {
                 "company": "Drift- og Utviklingskomiteen i Online, linjeforeningen for Informatikk ved NTNU",
                 "startDate": "September 2015",
                 "endDate": "Nåværende",
-                "title": "Drifter og utvikler, driftsleder fra august 2017",
+                "title": "Drifter og utvikler, nestleder fra februar 2018",
                 "info": [
+                    "Som nestleder har jeg ansvar for kommunikasjon innad komiteen og mellom komiteene i linjeforeningen. Har også ansvar for å avlaste lederen når det er nødvendig.",
                     "Som driftsleder har jeg ansvar for drift at linjeforeningens systemer, som inkluderer linjeforeningens egenutviklede nettstide, online.ntnu.no, samt linjeforenings kiosksystem, komitésøknadsystem og generalforsamlingsapplikasjon.",
-                    "",
-                    "Som utvikler er jeg med på et team som videreutvikler linjeforeningens systemer og utvikler helt nye løsninger for å forenkle foreningens arbeid og forenkle studentenes hverdag.",
-                    ""
+                    "Som utvikler er jeg med på et team som videreutvikler linjeforeningens systemer og utvikler helt nye løsninger for å forenkle foreningens arbeid og forenkle studentenes hverdag."
+                ]
+            }, {
+                "company": "Norges teknisk-naturvitenskapelige universitet (NTNU)",
+                "startDate": "Januar 2018",
+                "endDate": "Mai 2018",
+                "title": "Læringsassistent i programvareutvikling (TDT4140)",
+                "info": [
+                    "Arbeidet bestod av å evaluere og vurdere studenter karaktermessig i et gruppeprosjekt.",
+                    "Prosjektet var basert på Java/JavaFX, databaser og REST rammeverk.",
+                    "Vurderte studentene også på bruken og forståelsen av Scrum og andre utviklingsrammeverk i prosjektet."
+                ]
+            }, {
+                "company": "Telenor Digital AS",
+                "startDate": "Juni 2018",
+                "endDate": "August 2018",
+                "title": "Sommerjobb som infrastrukturingeniør",
+                "info": [
+                    "Jobbet i et mindre team med andre sommerstudenter og erfarne utviklere.",
+                    "Arbeidet med Amazon Web Services, Terraform, Ansible, Consul, Docker og Nomad.",
+                    "Lagde et system som gjorde det enkelt å sette opp og vedlikeholde Nomad clusters til bruk i både utvikling og produksjon."
+                ]
+            }, {
+                "company": "Norges teknisk-naturvitenskapelige universitet (NTNU)",
+                "startDate": "August 2018",
+                "endDate": "Nåværende",
+                "title": "Læringsassistent i webteknologi (IT2805)",
+                "info": [
+                    "Arbeidet består av å evaluere og vurdere studenter karaktermessig i ukentlige oppgaver og et prosjekt.",
+                    "Emnet baserer seg på å introdusere nye studenter for grunnleggende webteknologi i form av HTML, CSS og JavaScript"
                 ]
             }
         ]
@@ -65,37 +83,36 @@
             {
                 "name": "Webutvikling",
                 "values": [
-                    "HTML",
-                    "CSS",
-                    "Javascript",
-                    "Nodejs",
-                    "React",
+                    "HTML / CSS",
+                    "JavaScript / NodeJS",
+                    "React / Redux",
+                    "Angular (2+)",
                     "Python",
-                    "Django",
-                    "Flask",
+                    "Django / Flask",
                     "Docker"
                 ] 
             }, {
-                "name": "Programmering",
+                "name": "Språk",
                 "values": [
                     "Java",
-                    "Javascript",
-                    "Python"
+                    "JavaScript",
+                    "TypeScript",
+                    "Python",
+                    "Terraform"
                 ] 
             }, {
-                "name": "*NIX administrasjon",
+                "name": "Infrastruktur",
                 "values": [
-                    "Debian / Ubuntu",
-                    "Shell Scripting",
                     "Docker",
-                    "XenServer",
-                    "Vmware ESXi",
+                    "Hypervisors (XenServer / Vmware ESXi)",
                     "Nginx",
                     "Ansible",
                     "Consul",
                     "Elastic Stack",
                     "Prometheus / grafana",
-                    "Drone.io"
+                    "Hashicorp Nomad",
+                    "Amazon Web Services",
+                    "Terraform"
                 ] 
             }
         ]
@@ -107,8 +124,8 @@
                 "name": "Leder i Drift- og Utviklingskomiteen",
                 "value": "dotkom-leder@online.ntnu.no"
             }, {
-                "name": "Ole Henry Stokker",
-                "value": "ohenstok@online.no eller 975 82 824"
+                "name": "Espen Nersveen (Telenor Digital AS)",
+                "value": "espen.nersveen@gmail.com (970 77 009)"
             }
         ]
     },
