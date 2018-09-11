@@ -1,43 +1,29 @@
-import React, { Component } from 'react'
+import React from 'react'
 import ContactInfo from './ContactInfo'
 
-export default class HeaderPhoto extends Component {
+const HeaderPhoto = ({ firstName, lastName, address, contact }) => (
+  <div className="header photo">
 
-	constructor (props) {
-        super(props)
+    <h1 id="title">{ firstName + ' ' + lastName }</h1>
 
-        this.state = {
-			firstName: props.firstName,
-			lastName: props.lastName,
-			address: props.address,
-			contact: props.contact
-        }
-    }
+    <div className="basic-info section">
+      <div className="set">
 
-    render() {
-        return (
-          <div className="header photo">
+        <p className="address">
+          <span className="value">{ address }</span>
+        </p>
 
-            <h1 id="title">{ this.state.firstName + ' ' + this.state.lastName }</h1>
+        <div className="r">
+          { contact.map((info) => (<ContactInfo data={info}/>)) }
+        </div>
 
-            <div className="basic-info section">
-              <div className="set">
+        <div className="clear"> </div>
+      </div>
 
-                <p className="address">
-                  <span className="value">{ this.state.address }</span>
-                </p>
+      <div className="clear"> </div>
+    </div>
+    
+  </div>
+)
 
-                <div className="r">
-                  { this.state.contact.map((info) => {return <ContactInfo data={info}/>}) }
-                </div>
-
-                <div className="clear"> </div>
-              </div>
-
-              <div className="clear"> </div>
-            </div>
-            
-          </div>
-        )
-    }
-}
+export default HeaderPhoto

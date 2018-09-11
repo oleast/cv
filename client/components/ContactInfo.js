@@ -1,25 +1,12 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export default class Skeleton extends Component {
+const ContactInfo = ({ data }) => (
+    <p className={ data.class }>
+        <label>{ data.label }
+            <span className="colon">:</span>
+        </label> 
+        <span className="value">{ data.value }</span>
+    </p>
+)
 
-    constructor (props) {
-        super(props)
-
-        this.state = {
-            class: props.data.class,
-            label: props.data.label,
-            value: props.data.value
-        }
-    }
-
-    render() {
-        return (
-            <p className={ this.state.class }>
-                <label>{ this.state.label }
-                    <span className="colon">:</span>
-                </label> 
-                <span className="value">{ this.state.value }</span>
-            </p>
-        )
-    }
-}
+export default ContactInfo

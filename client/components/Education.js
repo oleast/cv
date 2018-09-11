@@ -1,38 +1,26 @@
 import React, { Component } from 'react'
 
-export default class Education extends Component {
+const Education = ({ education }) => (
+    <div className="item">
+        <h3>
+            <span className="course l">{ education.course }</span>
+            <span className="date r">{ education.startDate } &mdash; { education.endDate }</span>
+        </h3>
 
-    constructor (props) {
-        super(props)
+        <div className="clear"> </div>
+        <span className="school">{ education.school }</span>
 
-        this.state = {
-            course: props.education.course,
-            startDate: props.education.startDate,
-            endDate: props.education.endDate,
-            school: props.education.school,
-            info: props.education.info
-        }
-        
-    }
+        <div className="info">
 
-    render() {
-        return (
-            <div className="item">
-                <h3>
-                    <span className="course l">{this.state.course}</span>
-                    <span className="date r">{this.state.startDate} &mdash; {this.state.endDate}</span>
-                </h3>
+            { education.info.map((line) => {
+                return line.length < 1
+                    ? <div key={"empty-edu"}><br/></div>
+                    : <div key={line.name}>{ line }</div>
+            })}
 
-                <div className="clear"> </div>
-                <span className="school">{this.state.school}</span>
+        </div>
+        <div className="clear"> </div>
+    </div>
+)
 
-                <div className="info">
-
-                    {this.state.info.map((line) => {return line.length < 1 ? line = <div key={"empty-edu"}><br/></div> : line = <div key={line.name} >{line}</div>})}
-
-                </div>
-                <div className="clear"> </div>
-            </div>
-        )
-    }
-}
+export default Education

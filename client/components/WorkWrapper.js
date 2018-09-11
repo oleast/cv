@@ -1,28 +1,16 @@
 import React, { Component } from 'react'
 import Work from './Work'
 
-export default class WorkWrapper extends Component {
+const WorkWrapper = ({ work }) => (
+	<div className="section section-work">
+		<h2 className="title">{ work.title }</h2>
+		<div className="set">
 
-    constructor (props) {
-        super(props)
+			{ work.values.map((value) => (<Work key={value.name} work={value} />)) }
 
-		this.state = {
-			title: props.work.title,
-			values: props.work.values
-		}
-    }
+		</div>
+		<div className="clear"> </div>
+	</div>
+)
 
-    render() {
-        return (
-            <div className="section section-work">
-				<h2 className="title">{this.state.title}</h2>
-				<div className="set">
-
-					{this.state.values.map((value) => { return <Work key={value.name} work={value} />})}
-
-				</div>
-				<div className="clear"> </div>
-			</div>
-        )
-    }
-}
+export default WorkWrapper

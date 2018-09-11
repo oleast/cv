@@ -62,10 +62,7 @@ export default class CV extends Component {
 
 						<EducationWrapper education={this.state.education} />
 
-						{console.log(this.state.skills)}
-
 						<SkillsWrapper skills={this.state.skills} />
-
 
 						<References references={this.state.references} />
 

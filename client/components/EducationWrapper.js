@@ -1,28 +1,16 @@
 import React, { Component } from 'react'
 import Education from './Education'
 
-export default class EducationWrapper extends Component {
+const EducationWrapper = ({ education }) =>(
+	<div className="section section-education">
+		<h2 className="title">{education.title}</h2>
+		<div className="set">
 
-    constructor (props) {
-        super(props)
+			{ education.values.map((value) => (<Education key={value.name} education={value} />)) }
 
-		this.state = {
-			title: props.education.title,
-			values: props.education.values
-		}
-    }
+		</div>
+		<div className="clear"> </div>
+	</div>
+)
 
-    render() {
-        return (
-            <div className="section section-education">
-				<h2 className="title">{this.state.title}</h2>
-				<div className="set">
-
-					{this.state.values.map((value) => { return <Education key={value.name} education={value} />})}
-
-				</div>
-				<div className="clear"> </div>
-			</div>
-        )
-    }
-}
+export default EducationWrapper
