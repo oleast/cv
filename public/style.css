@@ -145,7 +145,7 @@ p label {
 }
     .section span.r {
         float: right;
-        text-align: right;
+        text-align: left;
     }
     .section-education .school,
     .section-work .job_title {
