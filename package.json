@@ -30,6 +30,7 @@
   },
   "homepage": "https://github.com/oleast/cv#readme",
   "dependencies": {
+    "@polymer/lit-element": "^0.5.2",
     "axios": "^0.16.1",
     "babel-core": "^6.24.1",
     "babel-loader": "^7.0.0",
